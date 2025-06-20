@@ -20,10 +20,17 @@ namespace ejercicio_9
                 Console.WriteLine("ingrese una nota entre 0 y 20:");
                 nota = Convert.ToInt32(Console.ReadLine());
             }
-            if (nota >=16)
+            if (nota >= 16)
             {
                 Console.WriteLine("excelente");
             }
+            else if (nota == 14 || nota == 15)
+            { Console.WriteLine("Muy Bueno")}
+            else if (nota >= 11 || nota <= 13)
+            { Console.WriteLine("Bueno")
+                    }
+            else {
+                Console.WriteLine("insuficiente")}
         }
     }
 }
